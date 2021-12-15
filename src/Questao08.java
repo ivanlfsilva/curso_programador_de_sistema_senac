@@ -18,7 +18,10 @@ public class Questao08 {
         Double quantHoras = in.nextDouble();
 
         Double totSalario = valorHora * quantHoras;
+
+        System.out.println("-------------------------------------------------------");
         System.out.println(nome + " O total do seu salário é: " + totSalario + " R$");
+        System.out.println("-------------------------------------------------------");
 
     }
 }
