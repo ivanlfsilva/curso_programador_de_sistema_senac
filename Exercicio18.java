@@ -19,12 +19,13 @@ public class Exercicio18 {
 
         Integer maiorNumero = 0;
         Integer menorNumero = 0;
+        Integer soma = 0;
 
         for (Integer i = 1; i <= n; i++) {
 
             System.out.println("Digite o " + i + " º número");
             Integer numeroAtual = scanner.nextInt();
-
+            soma += + numeroAtual;
             if (i == 1) {
                 maiorNumero = numeroAtual;
                 menorNumero = numeroAtual;
@@ -32,11 +33,13 @@ public class Exercicio18 {
             if (numeroAtual > maiorNumero) {
                 maiorNumero = numeroAtual;
             }
-            if(numeroAtual < menorNumero){
+            if (numeroAtual < menorNumero) {
                 menorNumero = numeroAtual;
             }
         }
         System.out.println("O maior número Digitado foi: " + maiorNumero);
-        System.out.println("O menor número Digitado foi: " +menorNumero);
+        System.out.println("O menor número Digitado foi: " + menorNumero);
+        System.out.println("A soma dos números é: " + soma);
+        System.out.println("A soma do maior número com maior é: " + (maiorNumero + menorNumero));
     }
 }
